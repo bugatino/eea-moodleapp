@@ -7,7 +7,7 @@
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
     "cache_update_frequency_rarely": 43200000,
-    "default_lang": "en",
+    "default_lang": "vi",
     "languages": {
         "af": "Afrikaans",
         "ar": "العربية",
@@ -87,7 +87,10 @@
         "high": 120
     },
     "customurlscheme": "moodlemobile",
-    "sites": [],
+    "sites": [{
+        "name": "LMS EEA",
+        "url": "https://lms-dev.eea.edu.vn"
+    }],
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
