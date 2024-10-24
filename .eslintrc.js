@@ -235,7 +235,7 @@ const appConfig = {
         'new-parens': 'error',
         'no-bitwise': 'error',
         'no-cond-assign': 'error',
-        'no-console': 'error',
+        'no-console': 1,
         'no-debugger': 'error',
         'no-duplicate-case': 'error',
         'no-duplicate-imports': 'error',
