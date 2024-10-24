@@ -1,8 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-back-button [text]="'core.back' | translate" />
-        </ion-buttons>
+        <ion-buttons slot="start" />
         <ion-title>
             <h1>
                 <core-format-text [text]="siteName" contextLevel="system" [contextInstanceId]="0" class="core-header-sitename" />
@@ -14,7 +12,5 @@
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
-<core-loading [hideUntil]="loaded">
-    <core-empty-box *ngIf="tabs.length === 0" icon="fas-house" [message]="'core.courses.nocourses' | translate" />
-</core-loading>
-<core-tabs-outlet *ngIf="tabs.length > 0" [hideUntil]="loaded" [tabs]="tabs" (ionChange)="tabSelected()" />
+
+<page-core-courses-list />

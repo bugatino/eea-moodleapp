@@ -66,6 +66,9 @@ function buildRoutes(injector: Injector): Routes {
         CoreMainMenuComponentsModule,
         CoreSearchComponentsModule,
     ],
+    exports: [
+        CoreCoursesListPage,
+    ],
     declarations: [
         CoreCoursesCategoriesPage,
         CoreCoursesListPage,
