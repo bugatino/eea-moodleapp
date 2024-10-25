@@ -55,10 +55,6 @@
     </core-loading>
 </core-dynamic-component>
 
-
-<core-block-side-blocks-button slot="fixed" *ngIf="loaded && course && displayBlocks && hasBlocks" contextLevel="course"
-    [instanceId]="course.id" />
-
 <!-- Course Index button. -->
 <ion-fab slot="fixed" core-fab vertical="bottom" horizontal="end" *ngIf="loaded && (displayCourseIndex || communicationRoomUrl)">
     <ion-fab-button size="small" *ngIf="communicationRoomUrl" [href]="communicationRoomUrl" core-link capture="false"

@@ -29,7 +29,7 @@ import { CoreUtils } from '@services/utils/utils';
 @Component({
     selector: 'page-core-course-module-preview',
     templateUrl: 'module-preview.html',
-    styleUrls: ['module-preview.scss'],
+    styleUrls: ['module-preview.scss', 'mod_unilabel.scss'],
 })
 export class CoreCourseModulePreviewPage implements OnInit {
 

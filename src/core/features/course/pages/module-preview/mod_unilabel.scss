@@ -1,0 +1,116 @@
+:host {
+  ::ng-deep {
+    .section {
+      .unilabel {
+        .mod-indent-outer {
+          padding-left: 24px;
+          display: block;
+          .contentwithoutlink {
+            display: inline;
+          }
+          .unilabel-content {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .unilabel {
+      &.modtype_unilabel {
+        & > div {
+          padding-right: 0px;
+        }
+      }
+    }
+    .unilabel-overlay-effect {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: .5s ease;
+      overflow: hidden;
+      z-index: 1000;
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+    .eea-resource {
+      margin: 20px 0;
+      border-left: 5px solid;
+      border-radius: 0px;
+      .eea-icon {
+        font-size: 30px;
+        padding: 0 20px;
+        .badge {
+          font-size: 12px;
+          vertical-align: super;
+        }
+        i {
+          font-size: 24px;
+          padding: 8px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          color: #fff;
+        }
+      }
+      .eea-content {
+        padding: 0 20px 0 70px;
+        .eea-literature-list {
+          display: flex;
+          list-style: none !important;
+          li {
+            flex: 1;
+            text-align: center;
+            .eea-literature-icon {
+              img {
+                width: 60px;
+                display: block;
+                margin: 0 auto;
+              }
+              a {
+                display: inline-block;
+                color: #212529;
+                &:hover {
+                  opacity: 0.8;
+                }
+                div {
+                  display: inline-grid;
+                }
+              }
+            }
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    .blinking {
+      animation: blinkingText 2s infinite;
+    }
+
+    @keyframes "blinkingText" {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .eea-resource .eea-content {
+        padding: 0 0 0 20px;
+        text-align: justify;
+      }
+
+      .eea-literature-list {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

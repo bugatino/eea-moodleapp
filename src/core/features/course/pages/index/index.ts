@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import { Component, ViewChild, OnDestroy, OnInit, ElementRef } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 import { CoreTabsOutletTab, CoreTabsOutletComponent } from '@components/tabs-outlet/tabs-outlet';
 import { CoreCourseFormatDelegate } from '../../services/format-delegate';
@@ -69,7 +69,10 @@ export class CoreCourseIndexPage implements OnInit, OnDestroy {
         pageParams: {},
     };
 
-    constructor(private route: ActivatedRoute) {
+    constructor(
+      private route: ActivatedRoute,
+      private router: Router,
+    ) {
         this.selectTabObserver = CoreEvents.on(CoreEvents.SELECT_COURSE_TAB, (data) => {
             if (!data.name) {
                 // If needed, set sectionId and sectionNumber. They'll only be used if the content tabs hasn't been loaded yet.
@@ -320,6 +323,10 @@ export class CoreCourseIndexPage implements OnInit, OnDestroy {
         } else if(this.course.colorNumber !== undefined) {
             this.courseThumb.nativeElement.classList.add('course-color-' + this.course.colorNumber);
         }
+    }
+
+    onBackButtonClick(): void {
+        this.router.navigate(['/main/home/my']);
     }
 
 }

@@ -1,11 +1,13 @@
 <ion-header [collapsible]="(tabsComponent?.selectedIndex === 0 || tabsComponent?.selectedIndex === undefined) && !fullScreenEnabled">
     <ion-toolbar>
         <ion-buttons slot="start">
-            <ion-back-button [text]="'core.back' | translate" />
+            <ion-button (click)="onBackButtonClick()">
+                <ion-icon name="arrow-back" />
+            </ion-button>
         </ion-buttons>
         <ion-title>
             <h1>
-                <core-format-text [text]="title" contextLevel="course" [contextInstanceId]="course?.id" />
+                <core-format-text [text]="title" contextLevel="course" class="course-title" [contextInstanceId]="course?.id" />
             </h1>
         </ion-title>
 
