@@ -22,7 +22,7 @@ import { CoreMainMenuHomeHandlerService } from '@features/mainmenu/services/hand
 import { CoreMainMenuComponentsModule } from '@features/mainmenu/components/components.module';
 import { resolveHomeRoutes } from '@features/mainmenu/mainmenu-home-routing.module';
 import { CoreMainMenuHomePage } from '@features/mainmenu/pages/home/home';
-import { CoreCoursesLazyModule } from '@features/courses/courses-lazy.module';
+import {CoreCoursesLazyModule} from "@features/courses/courses-lazy.module";
 
 /**
  * Build module routes.
