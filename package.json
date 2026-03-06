@@ -180,10 +180,11 @@
         "ts-jest": "29.2.5",
         "ts-node": "8.10.2",
         "typescript": "5.3.3",
-        "vinyl": "3.0.0"
+        "vinyl": "3.0.0",
+        "webpack": "^5.104.1"
     },
     "engines": {
-        "node": ">=18.18.2 <19"
+        "node": ">=18.18.2"
     },
     "cordova": {
         "platforms": [

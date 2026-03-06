@@ -89,7 +89,7 @@
     "customurlscheme": "moodlemobile",
     "sites": [{
         "name": "LMS EEA",
-        "url": "https://lms-dev.eea.edu.vn"
+        "url": "https://learning.eea.edu.vn"
     }],
     "multisitesdisplay": "",
     "sitefindersettings": {},
